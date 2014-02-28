@@ -68,7 +68,7 @@ function formCheck(form) {
   }
 
   if (nullOrEmpty(hostname.value)) {
-    errorHandler(hostname, errContainer, "Please choose a name for your Y&uacute;n");
+    errorHandler(hostname, errContainer, "Please choose a name for the MT Comms Device");
     errors = true;
 
   } else if (hostname.value.match(/[^a-zA-Z0-9]/)) {

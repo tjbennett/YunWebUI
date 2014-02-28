@@ -36,7 +36,7 @@ http.prepare_content("text/html; charset=utf-8")
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
   <link rel="stylesheet" type="text/css" href="<%= resource %>/arduino/style.ugly.css"/>
-  <title>Y&uacute;n &#20113;</title>
+  <title>MT Comms &#20113;</title>
   <script type="text/javascript">
     var progress_bar_interval;
 
@@ -66,10 +66,10 @@ http.prepare_content("text/html; charset=utf-8")
 <div id="container">
   <div id="header">
     <div class="wrapper">
-      <h1>Y&uacute;n &#20113;</h1>
+      <h1>MT Comms &#20113;</h1>
 
-      <div id="logo"><a href="<%= pcdata(controller .. '/webpanel') %>"><img src="<%= resource %>/arduino/logo.png" alt="Y&uacute;n"/></a></div>
-      <div id="logophone"><a href="<%= pcdata(controller .. '/webpanel') %>"><img src="<%= resource %>/arduino/logo_phone.png" alt="Y&uacute;n"/></a></div>
+      <div id="logo"><a href="<%= pcdata(controller .. '/webpanel') %>"><img src="<%= resource %>/arduino/logo.png" alt="MT Comms"/></a></div>
+      <div id="logophone"><a href="<%= pcdata(controller .. '/webpanel') %>"><img src="<%= resource %>/arduino/logo_phone.png" alt="MT Comms"/></a></div>
     </div>
   </div>
   <div id="content">
@@ -77,13 +77,13 @@ http.prepare_content("text/html; charset=utf-8")
       <h2>Configuration saved!</h2>
     </div>
     <div class="wrapper divide">
-      <p>I'm restarting. <br/>Please connect your computer to the wireless network called <strong><%= ssid %></strong>.
+      <p>Device restarting. <br/>Please connect your computer to the wireless network called <strong><%= ssid %></strong>.
       </p>
 
       <div class="progress_bar_container">
         <div id="progress_bar" class="progress_bar">&nbsp;</div>
       </div>
-      <div id="progress_bar_response" class="progress_bar_response">Restarted! You'll find me <a href="http://<%= hostname %>.local">here</a>.
+      <div id="progress_bar_response" class="progress_bar_response">Restarted! Find the device at <a href="http://<%= hostname %>.local">here</a>.
       </div>
     </div>
   </div>

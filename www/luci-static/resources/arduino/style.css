@@ -43,7 +43,7 @@ select {
 }
 
 a {
-    color: #00929f;
+    color: #ffffff;
 }
 
 p {
@@ -101,7 +101,7 @@ ul {
 }
 
 .req {
-    color: #00929f;
+    color: #ffffff;
     font-size: 1.2em;
     line-height: .1em;
 }
@@ -124,13 +124,13 @@ input.error {
 }
 
 body {
-    background-color: #00929f;
+    background-color: #fff000;
     color: #222;
     font: 1em/1.4em "Lucida Grande", Lucida, Verdana, sans-serif;
 }
 
 html {
-    background: #00929f;
+    background: #ffff00;
 }
 
 h1 {
@@ -197,7 +197,7 @@ textarea {
 
 #logo {
     margin: 0 auto;
-    width: 8.5em;
+    width: 12.5em;
 }
 
 #logophone {
@@ -280,10 +280,10 @@ input.submit {
 }
 
 input.submit.saveForm {
-    border: 1px solid #1e8488;
-    box-shadow: 0 3px 0 #1e8488;
-    background: #00929f;
-    color: #FFF;
+    border: 1px solid #3AB540;
+    box-shadow: 0 3px 0 #3AB540;
+    background: #3AB54A;
+    color: #000000;
     font: .95em "Lucida Grande", Lucida, Verdana, sans-serif;
     width: 100%;
 }
@@ -376,11 +376,11 @@ input#discard {
 }
 
 #rest_api {
-    border-top: .2em solid #00929f;
+    border-top: .2em solid #ffffff;
 }
 
 #yun_config {
-    border-top: 1em solid #00929f;
+    border-top: 1em solid #ffffff;
 }
 
 input#conf_rest_btn {
@@ -397,7 +397,7 @@ input#conf_rest_btn {
 }
 
 .progress_bar {
-    background: #00929f;
+    background: #ffffff;
     width: 0;
     -webkit-transition: width .35s ease-out 0s;
     -moz-transition: width .35s ease-out 0s;
@@ -452,7 +452,7 @@ li.folder {
 }
 
 .connected {
-    color: #00929f;
+    color: #ffffff;
     padding-left: 1em;
 }
 
@@ -525,7 +525,7 @@ span.row span.val {
     }
 
     #header {
-        background: #00929f;
+        background: #ffffff;
         width: 100%;
         float: none;
         text-align: center;
@@ -561,7 +561,7 @@ span.row span.val {
     }
 
     #header {
-        background: #00929f;
+        background: #ffffff;
         width: 100%;
         float: none;
         text-align: center;
@@ -573,7 +573,7 @@ span.row span.val {
     }
 
     #logo {
-        width: 7em;
+        width: 9em;
         margin: 0 auto;
     }
 
@@ -623,7 +623,7 @@ span.row span.val {
 
 @media (min-width:1200px) {
     body {
-        background: #00929f;
+        background: #ffffff;
         font-size: .875em;
     }
 
@@ -643,7 +643,7 @@ span.row span.val {
     }
 
     #logo {
-        width: 9em;
+        width: 16em;
     }
 
     #content {
