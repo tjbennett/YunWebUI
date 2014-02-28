@@ -36,21 +36,21 @@ http.prepare_content("text/html; charset=utf-8")
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
   <link rel="stylesheet" type="text/css" href="<%= resource %>/arduino/style.ugly.css" />
-  <title>Y&uacute;n &#20113;</title>
+  <title>MT Comms &#3Ab54A;</title>
 </head>
 <body>
 <div id="container">
   <div id="header">
     <div class="wrapper">
-      <h1>Y&uacute;n &#20113;</h1>
-      <div id="logo"><a href="<%= pcdata(controller .. '/webpanel') %>"><img src="<%= resource %>/arduino/logo.png" alt="Y&uacute;n"/></a></div>
-      <div id="logophone"><a href="<%= pcdata(controller .. '/webpanel') %>"><img src="<%= resource %>/arduino/logo_phone.png" alt="Y&uacute;n"/></a></div>
+      <h1>MT Comms &#20113;</h1>
+      <div id="logo"><a href="<%= pcdata(controller .. '/webpanel') %>"><img src="<%= resource %>/arduino/logo.png" alt="MT Comms"/></a></div>
+      <div id="logophone"><a href="<%= pcdata(controller .. '/webpanel') %>"><img src="<%= resource %>/arduino/logo_phone.png" alt="MT Comms"/></a></div>
     </div>
   </div>
   <div id="content">
     <div class="wrapper">
       <div id="welcome_container">
-        <h2>Welcome to <strong><%= hostname %></strong>, your Arduino Y&uacute;n</h2>
+        <h2>Welcome to <strong><%= hostname %></strong>, the MT Comms device </h2>
       </div>
       <div id="configurebtn_container">
         <form method="get" action="<%= pcdata(controller .. '/webpanel/config') %>">
@@ -115,16 +115,16 @@ http.prepare_content("text/html; charset=utf-8")
 
     <% if update_file then %>
     <div class="wrapper divide">
-      <p>A file named <strong><%= update_file %></strong> has been found on the SD card.<br />Do you wish to use it to reset your Y&uacute;n?</p>
+      <p>A file named <strong><%= update_file %></strong> has been found on the SD card.<br />Do you wish to use it to reset the MT Comms device?</p>
       <p class="highlight alert">
-        <strong>ATTENTION!!</strong><br/>This will erase everything stored on the Y&uacute;n and update the whole system! Back up any custom files on your Y&uacute;n before proceeding!
+        <strong>ATTENTION!!</strong><br/>This will erase everything stored on the MT Comms device and update the whole system! Back up any custom files on the MT Comms devicebefore proceeding!
       </p>
       <p>
       <form method="post" action="<%= pcdata(controller .. '/webpanel/reset_board') %>">
       <ul>
           <li>
             <div class="input_container">
-              <input class="btTxt submit saveForm alert" type="submit" name="button" value="Reset" onclick="javascript:return confirm('Are you sure you want to RESET the Y&uacute;n &#20113;?\nThis operation is irreversible!!');">
+              <input class="btTxt submit saveForm alert" type="submit" name="button" value="Reset" onclick="javascript:return confirm('Are you sure you want to RESET the device &#20113;?\nThis operation is irreversible!!');">
             </div>
           </li>
         </ul>
