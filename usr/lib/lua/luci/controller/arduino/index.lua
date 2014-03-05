@@ -197,11 +197,11 @@ function index()
   end
 
   -- web panel
-  local webpanel = entry({ "webpanel" }, alias("webpanel", "go_to_homepage"), _("Arduino Web Panel"), 10)
+  local webpanel = entry({ "webpanel" }, alias("webpanel", "go_to_homepage"), _("MT Web Panel"), 10)
   webpanel.sysauth = "root"
   webpanel.sysauth_authenticator = "arduinoauth"
 
-  make_entry({ "webpanel", "homepage" }, call("homepage"), _("Arduino Web Panel"), 10)
+  make_entry({ "webpanel", "homepage" }, call("homepage"), _("MT Web Panel"), 10)
   make_entry({ "webpanel", "go_to_homepage" }, call("go_to_homepage"), nil)
   make_entry({ "webpanel", "set_password" }, call("go_to_homepage"), nil)
   make_entry({ "webpanel", "config" }, call("config"), nil)
