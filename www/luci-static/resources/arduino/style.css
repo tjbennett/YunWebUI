@@ -124,13 +124,13 @@ input.error {
 }
 
 body {
-    background-color: #fff000;
+    background-color: #ffffff;
     color: #222;
     font: 1em/1.4em "Lucida Grande", Lucida, Verdana, sans-serif;
 }
 
 html {
-    background: #ffff00;
+    background: #ffffff;
 }
 
 h1 {
@@ -280,8 +280,8 @@ input.submit {
 }
 
 input.submit.saveForm {
-    border: 1px solid #3AB540;
-    box-shadow: 0 3px 0 #3AB540;
+    border: 1px solid #3AA000;
+    box-shadow: 0 3px 0 #3AA000;
     background: #3AB54A;
     color: #000000;
     font: .95em "Lucida Grande", Lucida, Verdana, sans-serif;
