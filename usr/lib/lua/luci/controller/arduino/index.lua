@@ -575,8 +575,9 @@ local function build_bridge_request(command, params)
   }
   
   if command == "raw" then
-    if not_nil_or_empty(params[1]) then
-      bridge_request["data"] = params[1]
+    params = table.concat(params, "/")
+    if not_nil_or_empty(params) then
+      bridge_request["data"] = params
     end
     return bridge_request
   end
@@ -609,7 +610,7 @@ local function extract_jsonp_param(query_string)
 
   local qs_parts = string.split(query_string, "&")
   for idx, value in ipairs(qs_parts) do
-    if string.find(value, "jsonp") == 1 then
+    if string.find(value, "jsonp") == 1 or string.find(value, "callback") == 1 then
       return string.sub(value, string.find(value, "=") + 1)
     end
   end
@@ -794,7 +795,11 @@ function build_bridge_mailbox_request()
     end
   end
 
-  -- TODO check method?
+  if #params == 0 then
+    luci.http.status(400)
+    return
+  end
+
   local bridge_request = build_bridge_request("raw", params)
   if not bridge_request then
     luci.http.status(403)
